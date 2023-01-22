@@ -1,3 +1,5 @@
+# Setup Environment
+
 check .net version: dotnet --version
 
 create new project: dotnet new console -o "HelloWorld" --framework net6.0
