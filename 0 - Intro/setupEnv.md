@@ -14,5 +14,6 @@
 ## git commands
 
 * add all: git add --all
+* add specific file (README.md for example): git add .\README.md
 * commit with message: git commit -m "bla bla bla"
 * push all: git push -all
