@@ -5,4 +5,6 @@ var words = new string[]{
     "over","the","lazy","dog"
 };
 
+//index operator
 Console.WriteLine(words[1]);
+
