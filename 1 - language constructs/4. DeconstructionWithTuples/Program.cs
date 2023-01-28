@@ -14,7 +14,7 @@ System.Console.WriteLine($"{r1.Item1}, {r1.Item2}, {r1.Item3}");
 var (h, w, c) = GetStockValues("ABCD");
 System.Console.WriteLine($"{h}, {w}, {c}");
 
-//discard values
+//using discard operator
 decimal c1;
 (_, _, c1) = GetStockValues("ABCD");
 System.Console.WriteLine($"__, __, {c1}");
