@@ -33,7 +33,16 @@ public class CommissionCalculator
     public static void PrintTradeCommission(SecuritiesTrade trade)
     {
         decimal commission = 0.0m;
-
         commission = CalculateTradeCommission(trade);
+
+        switch (trade)
+        {
+            case StockTrade st:
+                System.Console.WriteLine($"Stock Trade of {st.Quantity} of {st.Symbol} is ${commission}");
+                break;
+            case BondTrade bt:
+                System.Console.WriteLine($"Bond Trade of {bt.Quantity} of {bt.Name} is ${commission}");
+                break;
+        }
     }
 }
