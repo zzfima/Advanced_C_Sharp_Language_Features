@@ -1,4 +1,7 @@
-﻿decimal GetGroupTicketPriceDiscount(int groupSize, DateTime visitDate) => (groupSize, visitDate.DayOfWeek) switch
+﻿// Main use case for the positional pattern:
+// matching against multiple values in a tuple
+
+decimal GetGroupTicketPriceDiscount(int groupSize, DateTime visitDate) => (groupSize, visitDate.DayOfWeek) switch
 {
     ( <= 0, _) => throw new ArgumentException("Group size must be a positive number"),
     (_, DayOfWeek.Saturday or DayOfWeek.Sunday) => 0.0m,

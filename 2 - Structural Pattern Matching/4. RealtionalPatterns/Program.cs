@@ -1,6 +1,5 @@
 ﻿
 //given date determine what quarter is
-
 string getQuarterFromDate(DateTime dateTime) => dateTime.Month switch
 {
     (>= 1 and <= 3) => "Q1",
@@ -16,8 +15,6 @@ dt = new DateTime(2023, 5, 13);
 System.Console.WriteLine($"Quarter of {dt.ToShortDateString()} is {getQuarterFromDate(dt)}");
 
 //given date determine if its falls into first or second half of year
-
-
 HalfOfYear getHalfOfYearFromDate1(DateTime dt) => dt.DayOfYear switch
 {
     (>= 1 and <= 182) => HalfOfYear.First,

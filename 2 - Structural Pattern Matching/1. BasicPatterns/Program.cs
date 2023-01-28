@@ -1,4 +1,7 @@
-﻿string? str = "This is a string";
+﻿// Main use case for the declaration pattern:
+// can check for the data type and assign the value to a variable using one statement.
+
+string? str = "This is a string";
 
 //checking using is
 if (str is not null)

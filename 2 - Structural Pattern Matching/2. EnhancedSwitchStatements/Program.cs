@@ -1,4 +1,8 @@
-﻿//common switch statement
+﻿// Main change to the switch structure for pattern matching:
+// The switch expression can operate on types in addition to constant values.
+// In C# 8.0 the "switch" statement has been enhanced to handle more data types.
+
+//common switch statement
 string NumToStringUpToThree(int num)
 {
     switch (num)
